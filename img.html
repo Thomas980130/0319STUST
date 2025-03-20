@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>背景圖重疊 (background-repeat)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .single-background {
+      width: 300px;
+      height: 200px;
+      background-image: url('https://callcarbar.com.tw/wp-content/uploads/2023/08/1724058575459.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 5px solid #1453ff;
+    }
+    .img {
+      width: 300px;
+      height: 200px;
+      background-image: url('https://memeprod.ap-south-1.linodeobjects.com/user-template/e82f6b0d10982da8e93634219afd3e0d.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 5px dashed #1453ff;
+    }
+
+    .repeated-background {
+      width: 300px;
+      height: 200px;
+      background-image: url('https://cdn.tatlerasia.com/tatlerasia/i/2024/12/10172429-befunky-collage-40_cover_1600x900.jpg');
+      background-size: 100px 100px;
+      background-repeat: repeat;
+      border: px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>背景圖重疊</h1>
+  <div class="container">
+    <!-- 單一背景 -->
+    <div class="single-background"></div>
+    <div class="img"></div>
+    <!-- 重複背景 -->
+    <div class="repeated-background"></div>
+  </div>
+
+</body>
+</html>
