@@ -1,0 +1,30 @@
+.container5 {
+    display: flex;
+    align-items: baseline;
+    background: beige;
+  }
+  .item {
+    background: cyan;
+    padding: 10px;
+    margin: 10px;
+  }	
+  .container1 {
+    display: flex;
+    align-items: stretch;
+    background: beige;
+  }
+  .container2 {
+    display: flex;
+    align-items: flex-start;
+    background: beige;
+  }
+  .container3 {
+    display: flex;
+    align-items: flex-end;
+    background: beige;
+  }
+  .container4 {
+    display: flex;
+    align-items: center;
+    background: beige;
+  }
