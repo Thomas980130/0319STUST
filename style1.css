@@ -1,0 +1,51 @@
+body {
+    font-family: "微軟正黑體", sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .tile {
+    width: 100px;
+    height: 100px;
+    background-image: url("puzzle.jpg"); /* 記得放對圖片檔名！ */
+    background-size: 300% 300%;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .reference img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+  
+  .reference p {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  

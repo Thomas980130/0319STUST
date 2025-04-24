@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>九宮格拼圖（含參考圖）</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <h1>加分作業（九宮格）</h1>
+
+
+  <div class="wrapper">
+    <div class="grid" id="grid"></div>
+
+    <div class="reference">
+      <p>參考圖：</p>
+      <img src="puzzle.jpg" alt="完整圖">
+    </div>
+  </div>
+
+  <script>
+    const positions = [
+      "0% 0%", "50% 0%", "100% 0%",
+      "0% 50%", "50% 50%", "100% 50%",
+      "0% 100%", "50% 100%", "100% 100%"
+    ];
+
+    // 隨機打亂
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    const shuffled = shuffle([...positions]);
+    const grid = document.getElementById("grid");
+
+    shuffled.forEach(pos => {
+      const tile = document.createElement("div");
+      tile.className = "tile";
+      tile.style.backgroundPosition = pos;
+      grid.appendChild(tile);
+    });
+  </script>
+</body>
+</html>
